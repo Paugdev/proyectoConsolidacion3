@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: 'Montserrat', arial;
+}
+
+
+figure{
+    border-radius: 100%;
+    width: auto;
+    background-color: rgb(255, 0, 208);
+    transition: width 2s, height 2s;
+}
+
+figure:hover{
+    width: 110%;
+    height: 110%;
+}
+
+img{
+    max-width: 100%;
+    border-radius: 100%;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.3); /* Aumenta el tamaño al 120% */
+}
+
+.conversacionBtn{
+    background-color: rgb(233,170,178); /* Color de fondo */
+    color: white;
+    padding: 15px 30px; /* Tamaño del botón */
+    font-size: 16px; /* Tamaño del texto */
+    border: none; /* Sin borde */
+    border-radius: 10px; /* Bordes redondeados */
+    cursor: pointer; /* Manito en hover */
+    box-shadow: 0 5px #2980b9; /* Sombra para el efecto 3D */
+    transition: all 0.2s ease; 
+}
+
+.conversacionBtn:hover {
+    background-color: rgb(163,92,110);
+    box-shadow: 0 2px #2980b9; /* Reducir la sombra para dar el efecto de presionado */
+    transform: translateY(3px); /* Desplaza el botón hacia abajo */
+}
+
+.chatContainer{
+    background-color:#CC808C ;
+    border: 2px black solid;
+    border-radius: 7%;
+}
+
+.alerta{
+    font-size: 40px;
+    color: red;
+    text-align: center;
+}
+
+.contenedorPadreRecibido{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+
+
+.recibido{
+    background-color: rgb(192, 129, 178);
+    border: 2px rgb(213, 158, 240) solid;
+    border-radius: 7%;
+}
+
+.contenedorPadreEnviado{
+    display: flex;
+    flex-direction: row-reverse;
+    
+}
+
+.enviado{
+    background-color:rgb(206, 132, 174);
+    border: 2px rgb(213, 158, 240) solid;
+    border-radius: 7%;
+}
+
+.contenedorLogo{
+    width: 30px;
+    height: 24px;
+    background-color: yellow;
+    transition: background-color 2s;
+}
+
+.contenedorLogo:hover{
+    background-color: green;
+}
+
+.lasCopasOriginal{
+    fill:black;
+}
+
+
+
+
+#contenedorMensajeEnviado{
+    display: none;
+}
+
+#chatCentral{
+    padding-top: 50px;
+    background-color:rgb(22,43,64) ;
+}
+
+@media screen and (min-width: 768px) {
+    .invadersOriginal{
+        fill:chartreuse;
+    }
+
+    .contenedorLogo{
+        width: 30px;
+        height: 24px;
+        background-color:burlywood;
+    }
+
+    figure:hover{
+        width: 200%;
+        height: 200%;
+    }
+    
+    
+}
+
+.body-calendar{
+    background-color: #f4f4f4;
+}
+
+aside{
+    background-image: url('../img/cerezas.png');
+}
+
+article{
+    background-color: rgb(163,92,110);
+}
+
+.emojiContainer{
+    background-color: #2c3e50;
+    border: 2px black solid;
+}
+
+.padreCalendario{
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+.calendario {
+    width: 350px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.calendario header {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.calendario header h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.calendario table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.calendario th, .calendario td {
+    width: 14.28%; /* Siete columnas (100% / 7) */
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+}
+
+.calendario th {
+    background-color: #3498db;
+    color: white;
+}
+
+.calendario td {
+    background-color: #fff;
+    color: #2c3e50;
+}
+
+.calendario td:hover {
+    background-color: #ecf0f1;
+    cursor: pointer;
+}
+
+.calendario .today {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.btnContainer{
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.buttonPrincipal {
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #3498db;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+
+}
+
+.buttonPrincipal:hover {
+    background-color: #2980b9;
+}
+
+input{
+    border-radius: 10%;
+}
+
+.org-chart {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Estilo de los nodos (cada persona del organigrama) */
+.org-node {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    position: relative;
+}
+
+/* Líneas que conectan los nodos */
+.line-down {
+    width: 2px;
+    height: 20px;
+    background-color: black;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+}
+
+.line-side {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    position: relative;
+    top: -20px;
+}
+
+.org-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}

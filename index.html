@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Chat</title>
+    <link rel="stylesheet" href="./assets/css/cssboostrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
+</head>
+<body onload="asignarEventos()">
+
+    <div class="container bg-info">
+    <!-- INICIO NAVBAR-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <div class="contenedorLogo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path class="invadersOriginal" d="M6 3h2v2H6zm2 16h3v2H8zm8-16h2v2h-2zm-3 16h3v2h-3zm7-8V9h-2V7h-2V5h-2v2h-4V5H8v2H6v2H4v2H2v8h2v-4h2v4h2v-3h8v3h2v-4h2v4h2v-8zm-10 1H8V9h2zm6 0h-2V9h2z"/>
+                        </svg>
+                    </div>
+                </a>
+
+                <a class="navbar-brand" href="#">social</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./index.html">Principal</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./preguntas.html">Preguntas</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./manual.html">Manuales</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./noticias.html">Noticias</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./calendario.html">Calendario</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Administración</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./organigrama.html">Organigrama</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Chat</a>
+                    </li>
+    
+    
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="buscar" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+                
+            </div>
+            </div>
+            </nav>
+        <!-- FIN NAVBAR-->
+
+    </div> 
+
+
+        <main class="container">
+        <div class="row">
+            <aside class="col-xs-12 col-md-4 d-none d-md-block  bg-warning">
+                <p class="d-inline-flex gap-1">
+                    <button class="btn conversacionBtn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        Conversaciones
+                    </button>
+                    </p>
+                    <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+
+
+                        <!-- Container de conversaciones-->
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12 m-xs-0 m-md-2 bg-info">
+                                    <!-- diseno a tres columnas de los contactos-->
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-md-4 bg-secondary rounded-circle">
+                                                <img class="img-fluid" src="./assets/img/Caesar.jpeg" alt="Zeppeli">
+                                            </div>
+                                            <div class="col-xs-12 col-md-4 bg-primary">
+                                                <p>Caesar Anthonio Zppeli</p>
+                                            </div>
+                                            <div class="col-xs-12 col-md-4 bg-info">
+                                                <small id="horaActual">14:25pm</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- fin diseno a tres columnas de los contactos-->
+                                </div>
+                                
+        
+        
+                                <div class="col-xs-12 m-xs-0 m-md-2 bg-info">
+                                    <!-- diseno a tres columnas de los contactos-->
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-md-4 bg-secondary rounded-circle">
+                                                <img class="img-fluid" src="./assets/img/DIO.jpeg" alt="DIO">
+                                            </div>
+                                            <div class="col-xs-12 col-md-4 bg-primary">
+                                                <p>Dio Brando</p>
+                                            </div>
+                                            <div class="col-xs-12 col-md-4 bg-danger">
+                                                <small>14:25pm</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                     <!-- fin diseno a tres columnas de los contactos-->
+                                </div>
+                                
+        
+                                <div class="col-xs-12 m-xs-0 m-md-2  bg-info">
+                                    <!-- diseno a tres columnas de los contactos-->
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-md-4 bg-secondary rounded-circle">
+                                                <img class="img-fluid" src="./assets/img/giorno.jpg" alt="Giorno">
+                                            </div>
+                                            <div class="col-xs-12 col-md-4 bg-primary">
+                                                <p>Giorno Giovanna</p>
+                                            </div>
+                                            <div class="col-xs-12 col-md-4 bg-danger">
+                                                <small>14:25pm</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                     <!-- fin diseno a tres columnas de los contactos-->
+                                </div>
+                                
+                                
+                                <div class="col-xs-12 m-xs-0 m-md-2  bg-info">
+                                    <!-- diseno a tres columnas de los contactos-->
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-md-4 bg-secondary rounded-circle">
+                                                <img class="img-fluid" src="./assets/img/josuke.jpeg" alt="Josuke">
+                                            </div>
+                                            <div class="col-xs-12 col-md-4 bg-primary">
+                                                <p>Higashikata Josuke</p>
+                                            </div>
+                                            <div class="col-xs-12 col-md-4 bg-danger">
+                                                <small>14:25pm</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                     <!-- fin diseno a tres columnas de los contactos-->
+                                </div>
+                               
+        
+                                <div class="col-xs-12 m-xs-0 m-md-2  bg-info">
+                                    <!-- diseno a tres columnas de los contactos-->
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-md-4 bg-secondary rounded-circle">
+                                                <img class="img-fluid" src="./assets/img/kira.jpg" alt="Kira">
+                                            </div>
+                                            <div class="col-xs-12 col-md-4 bg-primary">
+                                                <p>Yoshikage Kira</p>
+                                            </div>
+                                            <div class="col-xs-12 col-md-4 bg-danger">
+                                                <small>14:25pm</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                     <!-- fin diseno a tres columnas de los contactos-->
+                                </div>
+                                
+                            </div>
+                        </div>
+
+
+                        <!-- fin Container de conversaciones-->
+                    </div>
+                  </div>
+
+
+
+
+
+            </aside>
+            <article class="col-xs-12 col-md-8 ">
+                <div class="container">
+                    <div class="row">
+                        <div class="chatContainer  col-xs-12">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-2">
+                                            <figure>
+                                                <img src="assets/img/Caesar.jpeg" alt="Zeppeli">
+                                            </figure>
+                                    </div>
+                                    <div class="col-xs-12 col-md-10 text-center">
+                                        <h2> Caesar Anthonio Zeppeli</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="chatCentral" class="col-xs-12">
+
+                            <div class="contenedorPadreRecibido">
+                                <div class="recibido">
+                                    <p>Hola Como estas</p>
+                                </div>
+
+                            </div>
+
+                            <div class="contenedorPadreEnviado">
+                                <div class="enviado">
+                                    <p> Hace tiempo no charlamos</p>
+                                </div>
+                            </div>
+
+                            <div class="contenedorPadreRecibido">
+                                <div class="recibido">
+                                    <p>¿Donde estas viviendo ?</p>
+                                </div>
+                            </div>
+
+                            <div class="contenedorPadreEnviado">
+                                <div class="enviado">
+                                    <p> Estoy viviendo en chile</p>
+                                </div>
+                            </div>
+
+                            <div class="contenedorPadreRecibido">
+                                <div class="recibido">
+                                    <p>Que bien. Bonito pais</p>
+                                </div>
+                            </div>
+
+                            <div class="contenedorPadreEnviado">
+                                <div class="enviado" id="contenedorMensajeEnviado">
+                                    <p id="parrafoMensajeEnviado"></p>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="col-xs-12 ">
+                        <br>
+                                <div class="container">
+                                    <div class="row">
+                                            <div class="emojiContainer col-xs-12 col-md-1">
+                                                <img src="./assets/img/smile-regular-24.png" alt="">
+                                            </div>
+                                            <div class="col-xs-12 col-md-7 bg-primary">
+                                                <form>
+                                                    <input type="text" id="txtMensaje">
+                                                    <input type="button" class="btn btn-success" value="enviar" id="btnEnviar">
+                                                </form>
+                                            </div>
+                                            <div class="col-md-4 bg-success">
+                                                    <div class="container">
+                                                        <div class="row">
+                                                            <div class="col-xs-12 col-md-10 bg-warning">
+                                                                <!-- dropdown-->
+                                                                            <div class="btn-group">
+                                                                                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                                Adjuntar
+                                                                                </button>
+                                                                                <ul class="dropdown-menu">
+                                                                                <li><a class="dropdown-item" href="#">Imagen</a></li>
+                                                                                <li><a class="dropdown-item" href="#">Video</a></li>
+                                                                                <li><a class="dropdown-item" href="#">documento</a></li>
+                                                                                <li><hr class="dropdown-divider"></li>
+                                                                                <li><a class="dropdown-item" href="#">Sonido</a></li>
+                                                                                </ul>
+                                                                            </div>
+                                                                <!-- fin dropdown-->
+
+                                                            </div>
+                                                            <div class="col-xs-12 col-md-2 bg-danger">
+                                                                <p>M</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                    </div>
+                                </div> 
+
+                            <br>
+                            <button class="btn btn-outline-info d-block d-md-none">Ver</button>
+
+
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+      </main>
+
+
+        <footer class="container bg-danger d-none d-md-block">
+            <p class="text-sm-end text-md-center">Developed by Paulina González</p>
+          </footer>
+
+
+
+
+    <script src="./assets/js/jsboostrap/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
