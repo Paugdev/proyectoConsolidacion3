@@ -63,26 +63,54 @@ img:hover {
     
 }
 
+.nombre{
+    background-color: rgb(163,92,110);
+    color: white;
+    padding: 5%;
+
+}
+
+.hora{
+    background-color: rgb(163,92,110);
+    color: white;
+    padding: 5%;
+}
+
+.foto{
+    background-color:rgb(163,92,110) ;
+    border: black 2px solid;
+    border-radius: 5%;
+}
 
 
 .recibido{
     background-color: rgb(192, 129, 178);
     border: 2px rgb(213, 158, 240) solid;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
     border-radius: 7%;
 }
+
 
 .contenedorPadreEnviado{
     display: flex;
     flex-direction: row-reverse;
+    
     
 }
 
 .enviado{
     background-color:rgb(206, 132, 174);
     border: 2px rgb(213, 158, 240) solid;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
     border-radius: 7%;
 }
 
+.emojiC{
+    border-radius: 7%;
+}
+.emoji{
+    width: 10%;
+}
 .contenedorLogo{
     width: 30px;
     height: 24px;
@@ -94,10 +122,30 @@ img:hover {
     background-color: green;
 }
 
-.lasCopasOriginal{
+.invadersOriginal{
     fill:black;
 }
 
+.manual{
+    padding:2% ;
+    border: 2px black solid;
+    background-color: #f1f1ed;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+
+
+}
+
+.Preguntas{
+    padding: 5%;
+}
+
+.noticias{
+    padding:2% ;
+    border: 2px black solid;
+    background-color: #f1f1ed;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 2%;
+}
 
 
 
